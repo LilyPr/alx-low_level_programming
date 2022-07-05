@@ -6,5 +6,6 @@
  *   And the prototype of the function 
  */
 int _putchar(char c);
+int main(void);
 
 #endif

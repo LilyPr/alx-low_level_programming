@@ -9,7 +9,7 @@
  *  prints _putchar, followed by a new line
  *   program should return 0
  */
-int _putchar(char c)
+int main(void)
 {
 	_putchar('w');
 	_putchar('e');
