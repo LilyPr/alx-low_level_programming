@@ -6,9 +6,12 @@
 #include "main.h"
 
 /**
- * main - Prints "_putchar" followed by a new line.
+ * main - Brief description of print putchar followed by new line.
+ * @main - Prints putchar and program should return 0
+ * @Return - Brief description of return value
  *
- * Return: Always 0.
+ * Return: Describe the return value of function_name.
+ * Return: Always 0
  */
 int main(void)
 {
