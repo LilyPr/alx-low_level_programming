@@ -6,17 +6,15 @@
 #include "main.h"
 
 /**
- * main - Print "happy", followed by a new line
+ * main - Print "big", followed by a new line
  *   
  * Return: Always 0
  */
 int main(void)
 {
-	_putchar('h');
-	_putchar('a');
-	_putchar('p');
-	_putchar('p');
-	_putchar('y');
+	_putchar('b');
+	_putchar('i');
+	_putchar('g');
 	_putchar('\n');
 
 	return (0);
