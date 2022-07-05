@@ -1,21 +1,21 @@
-/*
- * This is my my File 0-putchar
- * Written: Lilian Mihanjo
- *
- */
-
 #include "main.h"
 
-/*
- * main - prints _putchar, followed by a new line.
+/**
+ * prints _putchar, followed by a new line.
  *
- * Return always 0 for successful
+ * Return always 0(success)
  */
 int main(void)
 {
-_putchar('my file');
-_putchar('main');
-_putchar('\n');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-return (0);
+	return (0);
 }
+
