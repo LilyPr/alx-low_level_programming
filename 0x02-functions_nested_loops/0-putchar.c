@@ -1,8 +1,3 @@
-/**
- * File 0-putchar.c
- * written by me
- */
-
 #include "main.h"
 
 /**
