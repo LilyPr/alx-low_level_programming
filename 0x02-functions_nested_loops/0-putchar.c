@@ -6,13 +6,15 @@
  * @Return - Brief description of return value
  *
  * Return: Describe the return value of function_name.
- * Return: Always 0
+ * Return: Always return 0
  */
 int main(void)
 {
-	_putchar('b');
-	_putchar('i');
-	_putchar('g');
+	_putchar('h');
+	_putchar('a');
+	_putchar('p');
+	_putchar('p');
+	_putchar('y');
 	_putchar('\n');
 
 	return (0);
