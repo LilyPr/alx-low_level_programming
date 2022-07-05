@@ -6,20 +6,17 @@
 #include "main.h"
 
 /**
- * main - entry print "putchar", followed by a new line
- * and program should return 0
+ * main - Print "happy", followed by a new line
  *   
- * Return: Always 0(success)
+ * Return: Always 0
  */
 int main(void)
 {
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
 	_putchar('h');
 	_putchar('a');
-	_putchar('r');
+	_putchar('p');
+	_putchar('p');
+	_putchar('y');
 	_putchar('\n');
 
 	return (0);
