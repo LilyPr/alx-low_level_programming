@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 /**
- * initialize first and second terms
+ * @initialize first and second terms
+ * @Description: function program that prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line
  * main - prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line.
  * 1 and 2, separated by a comma followed by a space.
  *
+ * @Description: return successful 0
  * Return always 0
  */
 int main(void)
@@ -47,6 +49,5 @@ int main(void)
 		fib2_half2 = half2;
 	}
 	printf("\n");
-
 	return (0);
 }
