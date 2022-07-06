@@ -6,6 +6,7 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
 	int count;
@@ -21,7 +22,6 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 	}
-
 	fib1_half1 = fib1 / 10000000000;
 	fib2_half1 = fib2 / 10000000000;
 	fib1_half2 = fib1 % 10000000000;
@@ -47,6 +47,7 @@ int main(void)
 		fib2_half2 = half2;
 	}
 	printf("\n");
+	
 	return (0);
 }
 
