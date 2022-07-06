@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 /**
- * @initialize first and second terms
- * @Description: function program that prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line
- * main - prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line.
- * 1 and 2, separated by a comma followed by a space.
+ * main- entry function that program that prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new lines
+ * @Description: function program that prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new lines.
  *
- * @Description: return successful 0
  * Return always 0
+ * @Description of return value always success
  */
 int main(void)
 {
@@ -34,11 +32,9 @@ int main(void)
 		half1 = fib1_half1 + fib2_half1;
 		half2 = fib1_half2 + fib2_half2;
 
-		if (fib1_half2 + fib2_half2 > 9999999999)
-		{
+		if (fib1_half2 + fib2_half2 > 9999999999){
 			half1 += 1;
-			half2 %= 10000000000;
-		}
+			half2 %= 10000000000;}
 		printf("%lu%lu", half1, half2);
 
 		if (count != 98)
