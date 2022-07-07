@@ -9,30 +9,15 @@
 int main(void)
 {
 	int a, b, c;
+	int largest;
 
 	a = 972;
 	b = -98;
 	c = 0;
 
-	printf(" a = 972");
-	scanf("%d", &a);
+	largest = largest_number(a, b, c);
 
-	printf(" b = -98"); 
-	scanf("%d", &b);
-
-	printf(" c = 0");
-       	scanf("%d", &c);
-if (a > b && b > c)
-{
-printf("Largest number = %d \n",a);
-}
-else if (b > a && a > c)
-{
-	printf("Largest number = %d \n",b); 
-}
-else
-{
-	printf("Largest number = %d \n",c);
+	printf("%d is the largest number\n", largest);
 
 	return (0);
 }
