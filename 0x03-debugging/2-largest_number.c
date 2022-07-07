@@ -12,19 +12,22 @@ int largest_number(int a, int b, int c)
 {
 	int largest;
 
+	printf("Input the values of three numbers : ");
+	scanf("%d %d %d", &a, &b, &c);
+	printf("1st a = %d,\t2nd b = %d,\t3rd c = %d\n", a, b, c);
+
 	if (a > b && b > c)
 	{
-		largest = a;
+		printf("%d is the largest number\n", largest);
 	}
 	else if (b > a && a > c)
 	{
-		largest = b;
+		printf("%d is the largest number\n", largest);
 	}
 	else
 	{
-		largest = c;
+		printf("%d is the largest number\n", largest);
 	}
 
 	return (largest);
 }
-
