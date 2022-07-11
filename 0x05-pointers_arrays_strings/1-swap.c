@@ -1,6 +1,3 @@
-/** file: 1-swap.c
- * by Lilian
- */
 #include "main.h"
 
 /**
