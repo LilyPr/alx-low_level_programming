@@ -1,5 +1,8 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
+
+#define DEST_SIZE 40
 
 /**
  * main - check the code
@@ -8,11 +11,17 @@
  */
 int main(void)
 {
-    char s1[98];
-    char *ptr;
+	char i[98];
+	char *ptr;
 
-    ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
-    printf("%s", s1);
-    printf("%s", ptr);
-    return (0);
+	char src[] = "Look Here";
+	char dest[DEST_SIZE] = "Unimaginable";
+
+	 ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
+	 printf("%s", i);
+         printf("%s", ptr);
+	 _strcpy(p, src);
+	 printf(dest);
+
+return 0;
 }
