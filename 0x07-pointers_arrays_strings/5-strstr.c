@@ -6,35 +6,30 @@
  * @needle: string
  *
  * Return: the pointer to the first occurence
+ *         of the located substring.
+ * If the substring is not located - NULL.
  */
-
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0;
-	int j = 0;
-	int k, s;
+	int index;
 
-	for (s = 0; needle[s]; s++)
-		;
-		if (s == 0)
-			return (haystack);
-		while (haystack[i])
+	if (*needle == 0)
+		return (haystack);
+
+	while (*haystack)
+	{
+		index = 0;
+
+		if (haystack[index] == needle[index])
 		{
-			if (haystack[i] == needle[j])
-			{
-				i++;
-				j++;
-				for (k = i; haystack[k]; k++)
-				{
-					if (needle[j] == '\0')
-						return (&(haystack[i - 1]));
-					if (haystack[k] != needle[j])
-						break;
-					j++;
-				}
-			}
-			i++;
-			j = 0;
+			do {
+				if (needle[index + 1] == '\0')
+					return (haystack);
+
+				index++;
+			} while (haystack[index] == needle[index]);
 		}
-		return (NULL);
+			haystack++;
+	}
+			return ('\0');
 }
