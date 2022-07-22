@@ -11,20 +11,39 @@
  */
 int main(int argc, char *argv[])
 {
-	int num, digit, sum = 0;
+	int cents, coins = 0;
 
-	for (num = 1; num < argc; num++)
+	if (argc != 2)
 	{
-		for (digit = 0; argv[num][digit]; digit++)
-		{
-			if (argv[num][digit] < '0' || argv[num][digit] > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-		sum += atoi(argv[num]);
+		printf("Error\n");
+		return (1);
 	}
-	printf("%d\n", sum);
+	cents = atoi(argv[1]);
+	while (cents > 0)
+	{
+		coins++;
+		if ((cents - 25) >= 0)
+		{
+			cents -= 25;
+			continue;
+		}
+		if ((cents - 10) >= 0)
+		{
+			cents -= 10;
+			continue;
+		}
+		if ((cents - 5) >= 0)
+		{
+			cents -= 5;
+			continue;
+		}
+		if ((cents - 2) >= 0)
+		{
+			cents -= 2;
+			continue;
+		}
+		cents--;
+	}
+	printf("%d\n", coins);
 	return (0);
 }
