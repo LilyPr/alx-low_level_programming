@@ -2,12 +2,10 @@
 #include <stdlib.h>
 
 /**
- * #include "dog.h"
- *
- * #include <stdlib.h>
+ * _strdup - duplicate a string
  * @str: string
  *
- * Return: pointer to newely allocated 
+ * Return: pointer to newely allocated space in memory
  */
 char *_strdup(char *str)
 {
