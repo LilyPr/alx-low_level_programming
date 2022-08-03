@@ -3,7 +3,7 @@
 /**
  * print_name - print the name
  * @name: string
- * *@f: function to print with
+ * @f: function to print with
  *
  * Return: void
  */
