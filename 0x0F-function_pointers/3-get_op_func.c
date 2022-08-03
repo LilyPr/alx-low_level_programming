@@ -3,9 +3,10 @@
 
 /**
  * get_op_func - selects the correct operation toperform
+ * the operation asked by the user.
  * @s: operation to perform
  *
- * Return: pointer to the correct function
+ * Return: pointer function that corresponds to the operator.
  */
 int (*get_op_func(char *s))(int, int)
 {
