@@ -10,11 +10,13 @@
  */
 unsigned int _strlen(char *str)
 {
-	unsigned int i;
+	int i;
 
-	for (i = 0; str[i]; i++)
-		;
-	return (1);
+		for (i = 0; s[i] != '\0'; i++)
+		{
+			continue;
+		}
+return (i);
 }
 /**
  * add_node_end - adds a new node to the end of linked list
@@ -25,7 +27,7 @@ unsigned int _strlen(char *str)
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new, *tmp;
+	list_t *new, *last;
 
 	if (str == NULL)
 		return (NULL);
@@ -43,11 +45,15 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (*head == NULL)
 	{
 		*head = new;
-		return (new);
 	}
-	tmp = *head;
-	while (tmp->next)
-		tmp = tmp->next;
-	tmp->next = new;
+	else
+	{
+	last = *head;
+		while (last->next)
+		{
+		last = last->next;
+		}
+	last->next = new;
+	}
 	return (new);
 }
