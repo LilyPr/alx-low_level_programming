@@ -1,1 +1,1 @@
-learn about double link list in c
+double link list
