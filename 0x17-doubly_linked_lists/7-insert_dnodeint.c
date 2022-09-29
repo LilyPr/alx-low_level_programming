@@ -6,45 +6,37 @@
   * @n: Value to assign to new node
   * Return: Address of the new node, NULL if it fails
   */
-dlistint_t *insert_dnodeint_at_idx(dlistint_t **head, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int num;
-	dlistint_t *new, *curr, *prev;
+	dlistint_t *new;
+	dlistint_t *tmp;
+	unsigned int connect = 0;
+	
+	if (idx == 0)
+		return (add_dnodeint(h, n));
 
-	curr = *head;
-	if (*head == NULL && idx != 0)
-		return (NULL);
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
 		return (NULL);
-	if (*head != NULL)
+	new->n = n;
+	new->prev = NULL;
+
+	tmp = *h;
+	while (tmp != NULL)
 	{
-		prev = NULL;
-		while (curr->prev != NULL)
-			curr = curr->prev;
-		for (num = 0; curr != NULL && num < idx; num++)
+		if ((connect + 1)  == idx)
 		{
-			prev = curr;
-			curr = curr->next;
-		}
-		if (num == idx)
-		{
-			new->n = n;
-			new->prev = prev;
-			if (curr != NULL)
-				curr->prev = new_node;
-			new->next = curr;
-			if (idx != 0)
-				prev->next = new;
-			else
-				*head = new;
+			new->next = tmp->next;
+			tmp->next = new;
+			new->prev = tmp;
 			return (new);
 		}
-		return (NULL);
+		connect++;
+		tmp = tmp->next;
 	}
-	new->next = NULL;
-	new->prev = NULL;
-	new->n = n;
-	*head = new;
-	return (new);
+	if ((connect + 1) ==  idx)
+		return (add_dnodeint_end(h, n));
+
+	free(new);
+	return (NULL);
 }
