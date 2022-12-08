@@ -1,0 +1,7 @@
+1 To make a executable of a source code:
+-----------------------------------------
+command:
+make message
+
+process inside of make:
+cc school.c -o school 
